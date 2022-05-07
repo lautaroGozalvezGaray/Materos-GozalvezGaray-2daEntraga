@@ -11,21 +11,21 @@ class Productos{
 
 //creacion de productos con sus caracteristicas
 
-const producto1 = new Productos("mates", 1000, "mate de calabaza");
-const producto2 = new Productos("mates", 2500, "mate de madera");
-const producto3 = new Productos("mates", 4000, "mate de grande");
-const producto4 = new Productos("mates", 5800, "mate de chico");
-const producto5 = new Productos("termos", 8000, "mate de cuero");
-const producto6 = new Productos("termos", 9000, "termo 1.5l");
-const producto7 = new Productos("termos", 8500, "termo 1l");
-const producto8 = new Productos("termos", 5000, "termo economico");
-const producto9 = new Productos("termos", 7800, "termo con pico");
-const producto10 = new Productos("termos", 6000, "termo economico 1.5");
-const producto11 = new Productos("mochilas", 12000, "mochila grande");
-const producto12 = new Productos("mochilas", 10000, "mochila chica");
-const producto13 = new Productos("mochilas", 13500, "mochila grande con bolcillo");
-const producto14 = new Productos("mochilas", 15000, "mochila grande roja");
-const producto15 = new Productos("mochilas", 18000, "mochila grande azul");
+const producto1 = new Productos("mates", 3800, "alpaca cincelada");
+const producto2 = new Productos("mates", 4100, "imperial criollo");
+const producto3 = new Productos("mates", 7100, "imperial gold argentina");
+const producto4 = new Productos("mates", 8300, "camionero cincelado");
+const producto5 = new Productos("termos", 7500, "stanley metal");
+const producto6 = new Productos("termos", 15000, "Stanley classic bottle 1,4 Lts");
+const producto7 = new Productos("termos", 10900, "Stanley classic bottle 1 Lts");
+const producto8 = new Productos("termos", 9800, "Stanley classic bottle 750 Ml");
+const producto9 = new Productos("termos", 3300, "Keep 1L pico cebador");
+const producto10 = new Productos("termos", 3200, "Termos ploteados");
+const producto11 = new Productos("mochilas", 4900, "mochila cuenca negra");
+const producto12 = new Productos("mochilas", 5300, "Mochila materok gris oscuro");
+const producto13 = new Productos("mochilas", 6100, "Mochila matriona bordó");
+const producto14 = new Productos("mochilas", 6000, "Mochila matriona azul");
+const producto15 = new Productos("mochilas", 7000, "Mochila matera urbana verde");
 
 //se almacena todos los productos en una variable stock para su posterior uso
 

@@ -121,12 +121,21 @@
                     margin-top: 1rem;
                     margin-bottom: 2rem;
                 }
+                #total{
+                    margin-top: 1.8rem;
+                    margin-bottom: 0;
+                    font-family: $fontAllPage;
+                    font-size: 1.5rem;
+                }
                 table{
                     text-align: center;
                     width: 100%;
+                    table-layout: fixed;
+                    margin-bottom: 1rem;
                 }
                 .button{
-                    height: 2rem;
+                    height: 0.5rem;
+                    margin-top: 0;
                     display: flex;
                     flex-direction: row;
                     align-items: center;

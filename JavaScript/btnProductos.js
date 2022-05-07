@@ -27,7 +27,7 @@ function agregarALocalStorage (producto) {
 
 //CREAMOS UNA FUNCION QUE VA CALCULAR EL TOTAL DEPENDIENDO LOS OBJ QUE HAY EN EL STORAGE
 
-total="";
+let total="";
 
 function sumarTotal(){
     for (const costo of arrayProductos){
@@ -35,32 +35,44 @@ function sumarTotal(){
     }
     let p = document.getElementById("total");
     
-    p.innerText=`$ ${total}`;
+    p.innerText=`El total de su compra es de $ ${total}`;
+
+    btnTotal.setAttribute("disabled","false");//desactivar boton de total
         
     console.log(total)
     console.log(arrayProductos)
 }
 
-
-//BOTON PRODUCTO 1 + SELECT 1 
-
-/*btn1.setAttribute("disabled", "false");
-let select1=document.getElementById("select1");
-select1.addEventListener("change", ()=>{
-    if(select1.value==0){
-        btn1.setAttribute("disabled", "false")
-    }else if(select1.value>=1){
-        btn1.removeAttribute("disabled")
+//FUNCION PARA VACIAR CARRITO Y PONER EN 0 EL TOTAL
+function clearBuy(){
+    total=0;
+    arrayProductos=[];
+    btnTotal.removeAttribute("disabled");//activar boton de total
+    localStorage.clear();
+    let pb = document.getElementById("total");
+    pb.innerText="";
+    while(table.lastChild){
+        table.removeChild(table.lastChild);
     }
-}) */
+}
+
 
 //BOTON CALCULAR TOTAL
 
 let btnTotal = document.getElementById("btnTotal");
 btnTotal.addEventListener("click", (e) => {
     sumarTotal();
-    btnTotal.setAttribute("disabled", "false");
 })
+
+
+//BOTON BORRAR TOTAL. PERMITE AGREGAR NUEVOS PRODUCTOS Y CALCULAR DE NUEVO EL TOTAL
+
+let tables = document.getElementById("productoSeleccionados");
+
+let btnborrar = document.getElementById("btnborrar");
+btnborrar.addEventListener("click", (e) => {
+    clearBuy();
+}) 
 
 //BOTONES DE PRODUCTOS
 
@@ -216,12 +228,3 @@ btn15.addEventListener('click', (e) => {
     table.append(td);
 })
 
-//BOTON BORRAR TOTAL. PERMITE AGREGAR NUEVOS PRODUCTOS Y CALCULAR DE NUEVO EL TOTAL
-
-let btnborrar = document.getElementById("btnborrar");
-btnborrar.addEventListener("click", (e) => {
-    let pb = document.getElementById("total");
-    pb.innerText="";
-    total=0;
-    btnTotal.removeAttribute("disabled")
-})
