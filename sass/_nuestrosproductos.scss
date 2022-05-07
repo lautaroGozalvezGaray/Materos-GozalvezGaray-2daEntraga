@@ -110,7 +110,7 @@
             div{
                 display: flex;
                 flex-direction: column;
-                background-color: $backgroundFooter;
+                background-color: $background;
                 font-family: $fontAllPage;
                 margin-bottom: 5rem;
                 margin-top: 1.5rem;
@@ -136,6 +136,7 @@
                 .button{
                     height: 0.5rem;
                     margin-top: 0;
+                    margin-bottom: 0.8rem;
                     display: flex;
                     flex-direction: row;
                     align-items: center;

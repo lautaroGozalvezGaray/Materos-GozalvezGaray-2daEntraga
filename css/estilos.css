@@ -305,7 +305,7 @@ header {
     .main .detalleCompra div {
       display: flex;
       flex-direction: column;
-      background-color: #d6d6d6;
+      background-color: #eeeeee;
       font-family: "Open Sans", sans-serif;
       margin-bottom: 5rem;
       margin-top: 1.5rem;
@@ -328,6 +328,7 @@ header {
       .main .detalleCompra div .button {
         height: 0.5rem;
         margin-top: 0;
+        margin-bottom: 0.8rem;
         display: flex;
         flex-direction: row;
         align-items: center;

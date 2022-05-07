@@ -75,7 +75,7 @@ function btnProduct(producto){
     agregarALocalStorage(producto);
     // Crear columnas
     const td = document.createElement("tr");
-    td.innerHTML = `<td>${producto.categoria}</td> <td>${producto.tipo}</td> <td>$${producto.precio}</td>`;
+    td.innerHTML = `<td>${producto.categoria}</td> <td>${producto.tipo}</td> <td>$${producto.precio}*</td>`;
     // agregando columnas a tabla
     table.append(td);
     return producto;
