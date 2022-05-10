@@ -46,6 +46,8 @@ function clearBuy(){
     localStorage.clear();
     let pb = document.getElementById("total");
     pb.innerText="";
+
+    let table=document.getElementById("productoSeleccionados");
     while(table.lastChild){
         table.removeChild(table.lastChild);
     }
